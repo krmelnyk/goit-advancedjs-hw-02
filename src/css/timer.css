@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #2e2f42;
+  background: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.timer-page {
+  padding: 36px max(16px, 5vw);
+}
+
+.back-link {
+  color: #4e75ff;
+}
+
+h1 {
+  margin: 24px 0;
+  font-size: 24px;
+}
+
+.timer-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+#datetime-picker {
+  width: 272px;
+  max-width: 100%;
+  height: 40px;
+  padding: 8px 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  background: #fff;
+  color: #2e2f42;
+  font: inherit;
+  letter-spacing: 0.04em;
+}
+
+#datetime-picker:hover {
+  border-color: #000;
+}
+
+#datetime-picker:focus {
+  border-color: #4e75ff;
+  outline: 2px solid #4e75ff;
+  outline-offset: 2px;
+}
+
+#datetime-picker:disabled {
+  border-color: #808080;
+  background: #fafafa;
+  color: #808080;
+  cursor: not-allowed;
+}
+
+[data-start] {
+  height: 40px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #4e75ff;
+  color: #fff;
+  font: inherit;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+[data-start]:hover {
+  background: #6c8cff;
+}
+
+[data-start]:disabled {
+  background: #cfcfcf;
+  color: #989898;
+  cursor: not-allowed;
+}
+
+.timer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value {
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  font-variant-numeric: tabular-nums;
+}
+
+.label {
+  text-transform: uppercase;
+}
